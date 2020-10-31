@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'bootstrap.min.css') }}" >
+
+    <title>Dass's Home</title>
+    <script src="{{ url_for('static', filename = 'jquery-3.2.1.slim.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'bootstrap.min.js') }}"></script>
+
+
+<script>
+    
+ $( document ).ready(function() {
+    var outer_text = getText();
+    
+     
+    
+});
+
+function btnStreamFunction(){
+    document.getElementById("img").src = "{{ url_for('video_feed') }}";
+    document.getElementById("headerh1").innerHTML = "Live Stream!!!";
+    
+     var x = document.getElementById("h1");
+     x.style.display = "none";
+}
+
+function btnPhotoFunction(){
+    var temph1 = parseInt(document.getElementById("h1").innerHTML);
+    document.getElementById("img").src = "/static/" + temph1.toString() + ".jpg"; 
+    document.getElementById("headerh1").innerHTML = "AI Captured Image: ";
+         var x = document.getElementById("h1");
+     x.style.display = "block";
+     
+}
+
+
+
+function NextFunction() {
+    
+    
+    var temph1 = parseInt(document.getElementById("h1").innerHTML);
+    temph1 = temph1 + 1;
+    if (temph1 >=100)
+    {
+        temph1 = 1
+    }
+    document.getElementById("img").src = "/static/" + temph1.toString() + ".jpg"; 
+    document.getElementById("h1").innerHTML = temph1.toString();
+    
+
+  
+}
+
+function PrevFunction() {
+    
+    
+    var temph1 = parseInt(document.getElementById("h1").innerHTML);
+    temph1 = temph1 - 1;
+    if (temph1 < 1)
+    {
+        temph1 = 100
+    }
+    document.getElementById("img").src = "/static/" + temph1.toString() + ".jpg"; 
+    document.getElementById("h1").innerHTML = temph1.toString();
+    
+
+  
+}
+
+
+function getText(){
+    // read text from URL location
+    var request = new XMLHttpRequest();
+    var temptxt = "";
+    request.open('GET', '/static/alert.txt', true);
+    request.send(null);
+    request.onreadystatechange = function () {
+        if (request.readyState === 4 && request.status === 200) {
+            var type = request.getResponseHeader('Content-Type');
+            if (type.indexOf("text") !== 1) {
+                temptxt = request.responseText;
+                document.getElementById("h1").innerHTML = temptxt;
+                return temptxt;
+            }
+        }
+    }
+}
+
+</script>
+
+  </head>
+  <body>
+      <div class="jumbotron">
+        <h1 id="headerh1" style="text-align:left;float:left;">AI Captured Image: </h1> 
+        <h1 id="h1" style="text-align:right;float:left;">1</h1> 
+        <hr style="clear:both;"/>
+        <img id="img" src="{{ url_for('static', filename = '1.jpg') }}" style="border: 3px solid black"/>
+        <br>
+        <a href="/r"><button class="btn btn-primary">Take photo</button></a>
+        <!--<a href="/stream" target="blank"><button>Stream</button></a>-->
+        <button class="btn btn-primary" id="btnStream" onclick="btnStreamFunction()">Stream</button>
+        <button class="btn btn-primary" id="btnPhoto" onclick="btnPhotoFunction()">View Photo</button>
+        <button class="btn btn-primary" onclick="PrevFunction()">Prev</button>
+        <button class="btn btn-primary" onclick="NextFunction()">Next</button>
+</div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
+</html>
+
+
+
