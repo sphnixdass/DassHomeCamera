@@ -32,6 +32,8 @@ class Camera:
         self.max_frames = 5*self.fps
         self.frames = []
         self.isrunning = False
+        self.currentImage = 1
+        self.CaptureImage = False
     def run(self):
         logging.debug("Perparing thread")
         global thread
@@ -45,7 +47,7 @@ class Camera:
             self.isrunning = True
             thread.start()
             thread2.start()
-            thread3.start()
+            #thread3.start()
             logger.info("Thread started")
 
     def _buzzer_loop(self):
@@ -85,7 +87,7 @@ class Camera:
                 #The mail addresses and password
                 sender_address = 'sphnixdass@gmail.com'
                 sender_pass = 'tailoymewuzueuri'
-                receiver_address = ['sphnixdass@gmail.com', 'carolin.s@kotak.com', 'selvgnb@rbos.co.uk', 'carolins82@gmail.com']
+                receiver_address = ['sphnixdass@gmail.com', 'carolin.s@kotak.com', 'carolins82@gmail.com']
                 #Setup the MIME
                 message = MIMEMultipart()
                 message['From'] = sender_address
@@ -113,6 +115,7 @@ class Camera:
         framecount = 0
         f = open("/home/pi/Desktop/flask-video-stream-master/static/alert.txt", "r")
         framecount = int(f.readline())
+        self.currentImage = framecount
         
         startflag = False
 
@@ -120,9 +123,9 @@ class Camera:
             #print("ssss")
             v,im = self.camera.read()
             im = cv2.rotate(im, cv2.cv2.ROTATE_180)
-            orgimg = im
+            orgimg = im.copy()
             if startflag == False:
-                orgimg2 = im
+                orgimg2 = im.copy()
                 startflag = True
                 
             s = im.shape
@@ -135,13 +138,15 @@ class Camera:
             cv2.putText(im,datetime.datetime.now().isoformat().split(".")[0],bottomLeftCornerOfText,font,fontScale,fontColor, lineType)
 
             fwflag = fwflag + 1
-            grayA = cv2.cvtColor(orgimg, cv2.COLOR_BGR2GRAY)
-            grayB = cv2.cvtColor(orgimg2, cv2.COLOR_BGR2GRAY)
-            thresh = 127
-            im_bw = cv2.threshold(grayA, thresh, 255, cv2.THRESH_BINARY)[1]
-            im_bw2 = cv2.threshold(grayB, thresh, 255, cv2.THRESH_BINARY)[1]
-            out_arr = np.logical_xor(im_bw, im_bw2)
-            print("Logical calculation : ", np.count_nonzero(out_arr==True))
+            grayA = cv2.cvtColor(orgimg.copy(), cv2.COLOR_BGR2GRAY)
+            grayB = cv2.cvtColor(orgimg2.copy(), cv2.COLOR_BGR2GRAY)
+            grayA[0:120] = 1
+            grayA[:,:250] = 1
+            #grayA[:50] = 1
+            grayB[0:120] = 1
+            grayB[:,:250] = 1
+
+
 
 
 
@@ -150,22 +155,42 @@ class Camera:
             (score, diff) = compare_ssim(grayA, grayB, full=True)
             diff = (diff * 255).astype("uint8")
 
+            thresh = cv2.threshold(diff, 0, 255,
+                cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)[1]
+            cnts, hie = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL,
+                cv2.CHAIN_APPROX_SIMPLE)
+            #cnts = cnts[0] if imutils.is_cv2() else cnts[1]
+            #im = thresh
+            savedflag = False
+            for c in cnts:
+                (x, y, w, h) = cv2.boundingRect(c)
+                if (y < 410 and w > 10 and h > 20 and w < 300 and h < 300 and len(cnts) < 15 and savedflag == False) or self.CaptureImage == True:
+                #if y < 410 and w > 10 and h > 20 and len(cnts) < 20:
+                    print(len(cnts), x, y, w, h)
+                    self.CaptureImage = False
+                
+                    cv2.rectangle(im, (x, y), (x + w, y + h), (50, 50, 255), 3)
+                    fwflag = 0
+                    framecount = framecount + 1
+                    if framecount > 100:
+                        framecount = 1
+                    self.currentImage = framecount
+                    f = open("/home/pi/Desktop/flask-video-stream-master/static/alert.txt", "w")
+                    f.write(str(framecount))
+                    f.close()
+            
+                    cv2.imwrite("/home/pi/Desktop/flask-video-stream-master/static/" + str(framecount) + ".jpg", im)
+                    thGmail = framecount
+                    thBuzzer = True
+                    savedflag = True
+
+
+  #  cv2.rectangle(imageB, (x, y), (x + w, y + h), (0, 0, 255), 2)
+    
+
             # 6. You can print only the score if you want
             #print("Matching Score: {}".format(score))
-            if (score < 0.96):
-                fwflag = 0
-                framecount = framecount + 1
-                if framecount > 100:
-                    framecount = 1
-                f = open("/home/pi/Desktop/flask-video-stream-master/static/alert.txt", "w")
-                f.write(str(framecount))
-                f.close()
-            
-                #date_string = datetime.datetime.now().strftime("%d%m%Y-%H%M%s")
-                #print("intruder ", date_string)
-                cv2.imwrite("/home/pi/Desktop/flask-video-stream-master/static/" + str(framecount) + ".jpg", im)
-                thGmail = framecount
-                thBuzzer = True
+            #if (score < 0.96):
 
             orgimg2 = orgimg
             

@@ -3,23 +3,36 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'bootstrap.min.css') }}" >
 
     <title>Dass's Home</title>
-    <script src="{{ url_for('static', filename = 'jquery-3.2.1.slim.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename = 'popper.min.js') }}"></script>
     <script src="{{ url_for('static', filename = 'bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'socket.io.js') }}"></script>
 
 
 <script>
     
  $( document ).ready(function() {
-    var outer_text = getText();
     
+    var socket = io();
+    socket.on('connect', function() {
+        socket.emit('my event', {data: 'I\'m connected!'});
+    });
      
+    socket.on('ImageUpdate', function(msg) {
+        console.log(msg);
+         var temph1 = parseInt(msg);
+        document.getElementById("img2").src = "/static/" + temph1.toString() + ".jpg";
+        document.getElementById("h1").innerHTML = msg
+        
+    });
+    
+    
     
 });
 
@@ -51,7 +64,7 @@ function NextFunction() {
     {
         temph1 = 1
     }
-    document.getElementById("img").src = "/static/" + temph1.toString() + ".jpg"; 
+    document.getElementById("img2").src = "/static/" + temph1.toString() + ".jpg"; 
     document.getElementById("h1").innerHTML = temph1.toString();
     
 
@@ -67,13 +80,17 @@ function PrevFunction() {
     {
         temph1 = 100
     }
-    document.getElementById("img").src = "/static/" + temph1.toString() + ".jpg"; 
+    document.getElementById("img2").src = "/static/" + temph1.toString() + ".jpg"; 
     document.getElementById("h1").innerHTML = temph1.toString();
     
 
   
 }
-
+function CaptureFunction(){
+    var socket = io();
+        socket.emit('captureimage', {data: 'CaptureImage'});
+ 
+}
 
 function getText(){
     // read text from URL location
@@ -97,21 +114,39 @@ function getText(){
 
   </head>
   <body>
-      <div class="jumbotron">
-        <h1 id="headerh1" style="text-align:left;float:left;">AI Captured Image: </h1> 
-        <h1 id="h1" style="text-align:right;float:left;">1</h1> 
-        <hr style="clear:both;"/>
-        <img id="img" src="{{ url_for('static', filename = '1.jpg') }}" style="border: 3px solid black"/>
+      <div class="container jumbotron">
+          <div class="row justify-content-md-center col-md-auto">
+        <h1>Live Stream!!!</h1>
+        </div>
+        <div class="row justify-content-md-center col-md-auto">
+        <img id="img" alt="Max-width 100%" class="img-fluid" src="{{ url_for('video_feed') }}" style="border: 3px solid black"/>
+        </div>
         <br>
-        <a href="/r"><button class="btn btn-primary">Take photo</button></a>
+        <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+        <button class="btn btn-primary" onclick="CaptureFunction()">Take photo</button>
+        </div>
         <!--<a href="/stream" target="blank"><button>Stream</button></a>-->
-        <button class="btn btn-primary" id="btnStream" onclick="btnStreamFunction()">Stream</button>
-        <button class="btn btn-primary" id="btnPhoto" onclick="btnPhotoFunction()">View Photo</button>
+        <!--<button class="btn btn-primary" id="btnStream" onclick="btnStreamFunction()">Stream</button>-->
+        <!--<button class="btn btn-primary" id="btnPhoto" onclick="btnPhotoFunction()">View Photo</button>-->
+        <div class="col col-lg-2">
         <button class="btn btn-primary" onclick="PrevFunction()">Prev</button>
+        </div>
+        <div class="col col-lg-2">
         <button class="btn btn-primary" onclick="NextFunction()">Next</button>
+        </div>
+        </div>
+        <br>
+        <div class="row justify-content-md-center col-md-auto">
+        <h5 id="headerh1">Recent Intruder Image: </h1> 
+        <h5 id="h1">1</h1> 
+
+        <br>
+        </div>
+        <div class="row justify-content-md-center col-md-auto">
+            <img id="img2" alt="Max-width 100%" class="img-fluid" src="{{ url_for('static', filename = '1.jpg') }}" style="border: 3px solid black"/>
+        </div>
 </div>
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

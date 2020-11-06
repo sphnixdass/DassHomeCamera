@@ -574,3 +574,484 @@
 2020-10-31 19:59:30,643 [DEBUG] __main__:: Requested /
 2020-10-31 20:54:10,484 [DEBUG] __main__:: Requested /
 2020-10-31 20:59:18,714 [DEBUG] __main__:: Requested /
+2020-11-01 04:55:38,060 [DEBUG] __main__:: Requested /
+2020-11-01 04:58:56,310 [DEBUG] __main__:: Requested /
+2020-11-01 06:04:36,054 [DEBUG] __main__:: Requested /
+2020-11-01 06:07:48,242 [DEBUG] __main__:: Requested /
+2020-11-01 08:30:52,953 [DEBUG] __main__:: Requested /
+2020-11-01 08:35:14,697 [DEBUG] __main__:: Requested /
+2020-11-02 17:50:13,727 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-02 17:50:13,735 [DEBUG] camera:: Starting thread
+2020-11-02 17:50:13,736 [DEBUG] camera:: Observation started
+2020-11-02 17:50:13,759 [INFO] camera:: Thread started
+2020-11-02 17:50:13,820 [DEBUG] __main__:: Dass Server Started
+2020-11-02 17:52:21,763 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-02 17:52:21,770 [DEBUG] camera:: Starting thread
+2020-11-02 17:52:21,771 [DEBUG] camera:: Observation started
+2020-11-02 17:52:21,783 [INFO] camera:: Thread started
+2020-11-02 17:52:21,820 [DEBUG] __main__:: Dass Server Started
+2020-11-02 18:00:12,631 [DEBUG] __main__:: Starting stream
+2020-11-02 21:27:20,051 [DEBUG] __main__:: Requested /
+2020-11-02 21:27:20,779 [DEBUG] __main__:: Requested /
+2020-11-02 23:20:20,000 [DEBUG] __main__:: Starting stream
+2020-11-03 10:25:22,684 [DEBUG] __main__:: Requested /
+2020-11-03 10:25:22,906 [DEBUG] __main__:: Requested /
+2020-11-03 10:25:28,759 [DEBUG] __main__:: Starting stream
+2020-11-03 11:12:02,585 [DEBUG] __main__:: Requested /
+2020-11-03 11:12:06,360 [DEBUG] __main__:: Starting stream
+2020-11-03 11:12:37,585 [DEBUG] __main__:: Requested capture
+2020-11-03 11:12:37,804 [DEBUG] __main__:: Requested /
+2020-11-03 11:22:15,878 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 11:22:15,886 [DEBUG] camera:: Starting thread
+2020-11-03 11:22:15,887 [DEBUG] camera:: Observation started
+2020-11-03 11:22:15,893 [INFO] camera:: Thread started
+2020-11-03 11:22:15,926 [DEBUG] __main__:: Dass Server Started
+2020-11-03 11:29:30,951 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 11:29:30,971 [DEBUG] camera:: Starting thread
+2020-11-03 11:29:30,973 [DEBUG] camera:: Observation started
+2020-11-03 11:29:30,985 [INFO] camera:: Thread started
+2020-11-03 11:29:31,025 [DEBUG] __main__:: Dass Server Started
+2020-11-03 11:30:20,072 [DEBUG] __main__:: Starting stream
+2020-11-03 11:40:13,066 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 11:40:13,077 [DEBUG] camera:: Starting thread
+2020-11-03 11:40:13,079 [DEBUG] camera:: Observation started
+2020-11-03 11:40:13,087 [INFO] camera:: Thread started
+2020-11-03 11:40:13,132 [DEBUG] __main__:: Dass Server Started
+2020-11-03 11:41:00,113 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 11:41:00,120 [DEBUG] camera:: Starting thread
+2020-11-03 11:41:00,121 [DEBUG] camera:: Observation started
+2020-11-03 11:41:00,127 [INFO] camera:: Thread started
+2020-11-03 11:41:00,157 [DEBUG] __main__:: Dass Server Started
+2020-11-03 11:41:06,459 [DEBUG] __main__:: Requested /
+2020-11-03 11:41:09,561 [DEBUG] __main__:: Starting stream
+2020-11-03 11:45:35,990 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 11:45:35,997 [DEBUG] camera:: Starting thread
+2020-11-03 11:45:35,998 [DEBUG] camera:: Observation started
+2020-11-03 11:45:36,004 [INFO] camera:: Thread started
+2020-11-03 11:45:36,048 [DEBUG] __main__:: Dass Server Started
+2020-11-03 11:45:54,797 [DEBUG] __main__:: Requested /
+2020-11-03 11:45:56,620 [DEBUG] __main__:: Starting stream
+2020-11-03 11:47:34,460 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 11:47:34,471 [DEBUG] camera:: Starting thread
+2020-11-03 11:47:34,473 [DEBUG] camera:: Observation started
+2020-11-03 11:47:34,481 [INFO] camera:: Thread started
+2020-11-03 11:47:34,525 [DEBUG] __main__:: Dass Server Started
+2020-11-03 11:47:37,595 [DEBUG] __main__:: Requested /
+2020-11-03 11:47:39,419 [DEBUG] __main__:: Starting stream
+2020-11-03 11:51:42,846 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 11:51:42,854 [DEBUG] camera:: Starting thread
+2020-11-03 11:51:42,855 [DEBUG] camera:: Observation started
+2020-11-03 11:51:42,861 [INFO] camera:: Thread started
+2020-11-03 11:51:42,878 [DEBUG] __main__:: Dass Server Started
+2020-11-03 11:53:25,294 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 11:53:25,305 [DEBUG] camera:: Starting thread
+2020-11-03 11:53:25,311 [DEBUG] camera:: Observation started
+2020-11-03 11:53:25,329 [INFO] camera:: Thread started
+2020-11-03 11:53:25,385 [DEBUG] __main__:: Dass Server Started
+2020-11-03 11:54:00,237 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 11:54:00,245 [DEBUG] camera:: Starting thread
+2020-11-03 11:54:00,246 [DEBUG] camera:: Observation started
+2020-11-03 11:54:00,252 [INFO] camera:: Thread started
+2020-11-03 11:54:00,283 [DEBUG] __main__:: Dass Server Started
+2020-11-03 11:54:56,046 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 11:54:56,058 [DEBUG] camera:: Starting thread
+2020-11-03 11:54:56,060 [DEBUG] camera:: Observation started
+2020-11-03 11:54:56,067 [INFO] camera:: Thread started
+2020-11-03 11:54:56,122 [DEBUG] __main__:: Dass Server Started
+2020-11-03 11:56:48,643 [DEBUG] __main__:: Requested /
+2020-11-03 11:56:51,770 [DEBUG] __main__:: Starting stream
+2020-11-03 11:57:10,295 [DEBUG] __main__:: Starting stream
+2020-11-03 12:00:20,906 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 12:00:20,914 [DEBUG] camera:: Starting thread
+2020-11-03 12:00:20,915 [DEBUG] camera:: Observation started
+2020-11-03 12:00:20,921 [INFO] camera:: Thread started
+2020-11-03 12:00:20,953 [DEBUG] __main__:: Dass Server Started
+2020-11-03 12:00:33,166 [DEBUG] __main__:: Requested /
+2020-11-03 12:00:35,661 [DEBUG] __main__:: Starting stream
+2020-11-03 12:01:22,210 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 12:01:22,217 [DEBUG] camera:: Starting thread
+2020-11-03 12:01:22,218 [DEBUG] camera:: Observation started
+2020-11-03 12:01:22,224 [INFO] camera:: Thread started
+2020-11-03 12:01:22,314 [DEBUG] __main__:: Dass Server Started
+2020-11-03 12:01:30,349 [DEBUG] __main__:: Requested /
+2020-11-03 12:01:32,266 [DEBUG] __main__:: Starting stream
+2020-11-03 12:09:11,220 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 12:09:11,227 [DEBUG] camera:: Starting thread
+2020-11-03 12:09:11,228 [DEBUG] camera:: Observation started
+2020-11-03 12:09:11,234 [INFO] camera:: Thread started
+2020-11-03 12:09:11,300 [DEBUG] __main__:: Dass Server Started
+2020-11-03 12:09:25,705 [DEBUG] __main__:: Requested /
+2020-11-03 12:09:28,285 [DEBUG] __main__:: Starting stream
+2020-11-03 12:47:45,809 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 12:47:45,824 [DEBUG] camera:: Starting thread
+2020-11-03 12:47:45,826 [DEBUG] camera:: Observation started
+2020-11-03 12:47:45,834 [INFO] camera:: Thread started
+2020-11-03 12:47:45,869 [DEBUG] __main__:: Dass Server Started
+2020-11-03 12:50:24,998 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 12:50:25,009 [DEBUG] camera:: Starting thread
+2020-11-03 12:50:25,011 [DEBUG] camera:: Observation started
+2020-11-03 12:50:25,019 [INFO] camera:: Thread started
+2020-11-03 12:50:25,067 [DEBUG] __main__:: Dass Server Started
+2020-11-03 12:50:28,595 [DEBUG] __main__:: Requested /
+2020-11-03 12:50:31,063 [DEBUG] __main__:: Starting stream
+2020-11-03 12:52:24,165 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 12:52:24,176 [DEBUG] camera:: Starting thread
+2020-11-03 12:52:24,178 [DEBUG] camera:: Observation started
+2020-11-03 12:52:24,196 [INFO] camera:: Thread started
+2020-11-03 12:52:24,246 [DEBUG] __main__:: Dass Server Started
+2020-11-03 12:52:56,494 [DEBUG] __main__:: Requested /
+2020-11-03 12:52:58,079 [DEBUG] __main__:: Starting stream
+2020-11-03 15:21:29,298 [DEBUG] __main__:: Requested /
+2020-11-03 15:21:31,953 [DEBUG] __main__:: Starting stream
+2020-11-03 18:09:52,107 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-03 18:09:52,118 [DEBUG] camera:: Starting thread
+2020-11-03 18:09:52,120 [DEBUG] camera:: Observation started
+2020-11-03 18:09:52,128 [INFO] camera:: Thread started
+2020-11-03 18:09:52,171 [DEBUG] __main__:: Dass Server Started
+2020-11-03 18:10:03,437 [DEBUG] __main__:: Requested /
+2020-11-03 18:10:08,605 [DEBUG] __main__:: Starting stream
+2020-11-04 16:48:13,653 [DEBUG] __main__:: Requested /
+2020-11-04 16:48:16,750 [DEBUG] __main__:: Starting stream
+2020-11-04 17:40:24,688 [DEBUG] __main__:: Starting stream
+2020-11-04 18:55:12,219 [DEBUG] __main__:: Requested /
+2020-11-04 18:55:36,420 [DEBUG] __main__:: Starting stream
+2020-11-04 18:55:38,691 [DEBUG] __main__:: Requested capture
+2020-11-04 18:55:38,926 [DEBUG] __main__:: Requested /
+2020-11-04 18:58:01,466 [DEBUG] __main__:: Requested /
+2020-11-04 18:58:10,973 [DEBUG] __main__:: Starting stream
+2020-11-04 18:58:43,342 [DEBUG] __main__:: Requested capture
+2020-11-04 18:58:43,626 [DEBUG] __main__:: Requested /
+2020-11-04 19:28:26,528 [DEBUG] __main__:: Requested /
+2020-11-04 19:28:34,872 [DEBUG] __main__:: Requested /
+2020-11-04 19:28:53,043 [DEBUG] __main__:: Starting stream
+2020-11-04 20:42:00,684 [DEBUG] __main__:: Requested /
+2020-11-04 20:42:03,568 [DEBUG] __main__:: Starting stream
+2020-11-04 20:42:29,149 [DEBUG] __main__:: Requested capture
+2020-11-04 20:42:29,310 [DEBUG] __main__:: Requested /
+2020-11-04 20:42:32,429 [DEBUG] __main__:: Starting stream
+2020-11-05 07:17:32,067 [DEBUG] __main__:: Requested /
+2020-11-05 07:17:32,620 [DEBUG] __main__:: Requested /
+2020-11-05 12:21:15,122 [DEBUG] __main__:: Requested /
+2020-11-05 12:21:17,763 [DEBUG] __main__:: Starting stream
+2020-11-06 10:35:03,332 [DEBUG] __main__:: Requested /
+2020-11-06 10:35:08,448 [DEBUG] __main__:: Starting stream
+2020-11-06 12:23:03,249 [DEBUG] __main__:: Requested /
+2020-11-06 12:23:05,195 [DEBUG] __main__:: Starting stream
+2020-11-06 13:01:57,603 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 13:01:57,610 [DEBUG] camera:: Starting thread
+2020-11-06 13:01:57,611 [DEBUG] camera:: Observation started
+2020-11-06 13:01:57,617 [INFO] camera:: Thread started
+2020-11-06 13:01:57,688 [DEBUG] __main__:: Dass Server Started
+2020-11-06 13:02:41,450 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 13:02:41,457 [DEBUG] camera:: Starting thread
+2020-11-06 13:02:41,458 [DEBUG] camera:: Observation started
+2020-11-06 13:02:41,464 [INFO] camera:: Thread started
+2020-11-06 13:02:41,486 [DEBUG] __main__:: Dass Server Started
+2020-11-06 13:03:28,582 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 13:03:28,593 [DEBUG] camera:: Starting thread
+2020-11-06 13:03:28,595 [DEBUG] camera:: Observation started
+2020-11-06 13:03:28,602 [INFO] camera:: Thread started
+2020-11-06 13:03:28,669 [DEBUG] __main__:: Dass Server Started
+2020-11-06 13:03:43,000 [DEBUG] __main__:: Requested /
+2020-11-06 13:03:45,330 [DEBUG] __main__:: Starting stream
+2020-11-06 13:07:52,596 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 13:07:52,603 [DEBUG] camera:: Starting thread
+2020-11-06 13:07:52,604 [DEBUG] camera:: Observation started
+2020-11-06 13:07:52,616 [INFO] camera:: Thread started
+2020-11-06 13:07:52,637 [DEBUG] __main__:: Dass Server Started
+2020-11-06 13:09:14,824 [DEBUG] __main__:: Requested /
+2020-11-06 13:09:17,132 [DEBUG] __main__:: Starting stream
+2020-11-06 13:21:32,092 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 13:21:32,100 [DEBUG] camera:: Starting thread
+2020-11-06 13:21:32,101 [DEBUG] camera:: Observation started
+2020-11-06 13:21:32,118 [INFO] camera:: Thread started
+2020-11-06 13:21:32,173 [DEBUG] __main__:: Dass Server Started
+2020-11-06 13:21:53,248 [DEBUG] __main__:: Requested /
+2020-11-06 13:21:58,774 [DEBUG] __main__:: Starting stream
+2020-11-06 13:23:04,526 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 13:23:04,537 [DEBUG] camera:: Starting thread
+2020-11-06 13:23:04,539 [DEBUG] camera:: Observation started
+2020-11-06 13:23:04,547 [INFO] camera:: Thread started
+2020-11-06 13:23:04,592 [DEBUG] __main__:: Dass Server Started
+2020-11-06 13:23:06,917 [DEBUG] __main__:: Requested /
+2020-11-06 13:23:09,403 [DEBUG] __main__:: Starting stream
+2020-11-06 13:23:57,904 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 13:23:57,911 [DEBUG] camera:: Starting thread
+2020-11-06 13:23:57,913 [DEBUG] camera:: Observation started
+2020-11-06 13:23:57,919 [INFO] camera:: Thread started
+2020-11-06 13:23:57,946 [DEBUG] __main__:: Dass Server Started
+2020-11-06 13:24:12,798 [DEBUG] __main__:: Requested /
+2020-11-06 13:24:15,055 [DEBUG] __main__:: Starting stream
+2020-11-06 13:33:44,194 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 13:33:44,206 [DEBUG] camera:: Starting thread
+2020-11-06 13:33:44,208 [DEBUG] camera:: Observation started
+2020-11-06 13:33:44,215 [INFO] camera:: Thread started
+2020-11-06 13:33:44,511 [DEBUG] __main__:: Dass Server Started
+2020-11-06 13:34:48,012 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 13:34:48,023 [DEBUG] camera:: Starting thread
+2020-11-06 13:34:48,030 [DEBUG] camera:: Observation started
+2020-11-06 13:34:48,038 [INFO] camera:: Thread started
+2020-11-06 13:34:48,135 [DEBUG] __main__:: Dass Server Started
+2020-11-06 13:35:31,171 [DEBUG] __main__:: Requested /
+2020-11-06 13:35:33,507 [DEBUG] __main__:: Starting stream
+2020-11-06 14:25:37,037 [DEBUG] __main__:: Starting stream
+2020-11-06 18:26:56,400 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 18:26:56,412 [DEBUG] camera:: Starting thread
+2020-11-06 18:26:56,420 [DEBUG] camera:: Observation started
+2020-11-06 18:26:56,443 [INFO] camera:: Thread started
+2020-11-06 18:26:56,748 [DEBUG] __main__:: Dass Server Started
+2020-11-06 18:27:07,276 [DEBUG] __main__:: Requested /
+2020-11-06 18:27:14,526 [DEBUG] __main__:: Starting stream
+2020-11-06 18:28:42,582 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 18:28:42,593 [DEBUG] camera:: Starting thread
+2020-11-06 18:28:42,595 [DEBUG] camera:: Observation started
+2020-11-06 18:28:42,623 [INFO] camera:: Thread started
+2020-11-06 18:28:42,709 [DEBUG] __main__:: Dass Server Started
+2020-11-06 18:28:45,365 [DEBUG] __main__:: Requested /
+2020-11-06 18:29:44,589 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 18:29:44,604 [DEBUG] camera:: Starting thread
+2020-11-06 18:29:44,606 [DEBUG] camera:: Observation started
+2020-11-06 18:29:44,614 [INFO] camera:: Thread started
+2020-11-06 18:29:44,874 [DEBUG] __main__:: Dass Server Started
+2020-11-06 18:29:45,497 [DEBUG] __main__:: Requested /
+2020-11-06 18:31:59,418 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 18:31:59,430 [DEBUG] camera:: Starting thread
+2020-11-06 18:31:59,432 [DEBUG] camera:: Observation started
+2020-11-06 18:31:59,440 [INFO] camera:: Thread started
+2020-11-06 18:31:59,758 [DEBUG] __main__:: Dass Server Started
+2020-11-06 18:32:01,945 [DEBUG] __main__:: Requested /
+2020-11-06 18:36:59,891 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 18:36:59,903 [DEBUG] camera:: Starting thread
+2020-11-06 18:36:59,905 [DEBUG] camera:: Observation started
+2020-11-06 18:36:59,913 [INFO] camera:: Thread started
+2020-11-06 18:37:00,023 [DEBUG] __main__:: Dass Server Started
+2020-11-06 18:37:00,315 [DEBUG] __main__:: Requested /
+2020-11-06 18:38:17,885 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 18:38:17,898 [DEBUG] camera:: Starting thread
+2020-11-06 18:38:17,901 [DEBUG] camera:: Observation started
+2020-11-06 18:38:17,911 [INFO] camera:: Thread started
+2020-11-06 18:38:18,051 [DEBUG] __main__:: Dass Server Started
+2020-11-06 18:38:18,490 [DEBUG] __main__:: Requested /
+2020-11-06 18:38:19,081 [DEBUG] __main__:: Starting stream
+2020-11-06 18:55:24,974 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 18:55:24,982 [DEBUG] camera:: Starting thread
+2020-11-06 18:55:24,983 [DEBUG] camera:: Observation started
+2020-11-06 18:55:24,995 [INFO] camera:: Thread started
+2020-11-06 18:55:25,183 [DEBUG] __main__:: Dass Server Started
+2020-11-06 18:55:27,544 [DEBUG] __main__:: Requested /
+2020-11-06 18:55:28,156 [DEBUG] __main__:: Starting stream
+2020-11-06 18:56:52,592 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 18:56:52,600 [DEBUG] camera:: Starting thread
+2020-11-06 18:56:52,601 [DEBUG] camera:: Observation started
+2020-11-06 18:56:52,607 [INFO] camera:: Thread started
+2020-11-06 18:56:52,802 [DEBUG] __main__:: Dass Server Started
+2020-11-06 18:58:25,356 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 18:58:25,364 [DEBUG] camera:: Starting thread
+2020-11-06 18:58:25,366 [DEBUG] camera:: Observation started
+2020-11-06 18:58:25,372 [INFO] camera:: Thread started
+2020-11-06 18:58:25,621 [DEBUG] __main__:: Dass Server Started
+2020-11-06 18:58:35,699 [DEBUG] __main__:: Requested /
+2020-11-06 18:58:36,342 [DEBUG] __main__:: Starting stream
+2020-11-06 19:05:53,241 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:05:53,248 [DEBUG] camera:: Starting thread
+2020-11-06 19:05:53,249 [DEBUG] camera:: Observation started
+2020-11-06 19:05:53,255 [INFO] camera:: Thread started
+2020-11-06 19:05:53,455 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:05:58,080 [DEBUG] __main__:: Requested /
+2020-11-06 19:05:58,636 [DEBUG] __main__:: Starting stream
+2020-11-06 19:06:44,357 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:06:44,371 [DEBUG] camera:: Starting thread
+2020-11-06 19:06:44,377 [DEBUG] camera:: Observation started
+2020-11-06 19:06:44,385 [INFO] camera:: Thread started
+2020-11-06 19:06:44,570 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:06:51,041 [DEBUG] __main__:: Requested /
+2020-11-06 19:06:52,011 [DEBUG] __main__:: Starting stream
+2020-11-06 19:13:51,751 [DEBUG] __main__:: Requested /
+2020-11-06 19:13:52,443 [DEBUG] __main__:: Starting stream
+2020-11-06 19:16:34,702 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:16:34,713 [DEBUG] camera:: Starting thread
+2020-11-06 19:16:34,721 [DEBUG] camera:: Observation started
+2020-11-06 19:16:34,728 [INFO] camera:: Thread started
+2020-11-06 19:16:34,982 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:17:48,644 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:17:48,656 [DEBUG] camera:: Starting thread
+2020-11-06 19:17:48,658 [DEBUG] camera:: Observation started
+2020-11-06 19:17:48,667 [INFO] camera:: Thread started
+2020-11-06 19:17:48,889 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:17:53,907 [DEBUG] __main__:: Requested /
+2020-11-06 19:17:54,499 [DEBUG] __main__:: Starting stream
+2020-11-06 19:19:43,245 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:19:43,261 [DEBUG] camera:: Starting thread
+2020-11-06 19:19:43,263 [DEBUG] camera:: Observation started
+2020-11-06 19:19:43,271 [INFO] camera:: Thread started
+2020-11-06 19:19:43,613 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:19:44,722 [DEBUG] __main__:: Requested /
+2020-11-06 19:19:45,290 [DEBUG] __main__:: Starting stream
+2020-11-06 19:22:51,916 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:22:51,923 [DEBUG] camera:: Starting thread
+2020-11-06 19:22:51,924 [DEBUG] camera:: Observation started
+2020-11-06 19:22:51,936 [INFO] camera:: Thread started
+2020-11-06 19:22:52,037 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:23:10,355 [DEBUG] __main__:: Requested /
+2020-11-06 19:23:11,466 [DEBUG] __main__:: Starting stream
+2020-11-06 19:25:52,764 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:25:52,772 [DEBUG] camera:: Starting thread
+2020-11-06 19:25:52,773 [DEBUG] camera:: Observation started
+2020-11-06 19:25:52,779 [INFO] camera:: Thread started
+2020-11-06 19:25:53,053 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:25:54,836 [DEBUG] __main__:: Requested /
+2020-11-06 19:25:55,447 [DEBUG] __main__:: Starting stream
+2020-11-06 19:36:13,729 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:36:13,736 [DEBUG] camera:: Starting thread
+2020-11-06 19:36:13,738 [DEBUG] camera:: Observation started
+2020-11-06 19:36:13,749 [INFO] camera:: Thread started
+2020-11-06 19:36:13,936 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:36:19,784 [DEBUG] __main__:: Requested /
+2020-11-06 19:36:21,838 [DEBUG] __main__:: Starting stream
+2020-11-06 19:39:44,074 [DEBUG] __main__:: Requested /
+2020-11-06 19:39:44,222 [DEBUG] __main__:: Starting stream
+2020-11-06 19:42:09,914 [DEBUG] __main__:: Requested /
+2020-11-06 19:42:10,386 [DEBUG] __main__:: Starting stream
+2020-11-06 19:42:16,810 [DEBUG] __main__:: Requested /
+2020-11-06 19:42:17,346 [DEBUG] __main__:: Starting stream
+2020-11-06 19:43:37,712 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:43:37,723 [DEBUG] camera:: Starting thread
+2020-11-06 19:43:37,725 [DEBUG] camera:: Observation started
+2020-11-06 19:43:37,733 [INFO] camera:: Thread started
+2020-11-06 19:43:37,997 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:43:39,302 [DEBUG] __main__:: Requested /
+2020-11-06 19:43:39,929 [DEBUG] __main__:: Starting stream
+2020-11-06 19:44:47,416 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:44:47,423 [DEBUG] camera:: Starting thread
+2020-11-06 19:44:47,424 [DEBUG] camera:: Observation started
+2020-11-06 19:44:47,430 [INFO] camera:: Thread started
+2020-11-06 19:44:47,671 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:44:48,743 [DEBUG] __main__:: Requested /
+2020-11-06 19:44:49,421 [DEBUG] __main__:: Starting stream
+2020-11-06 19:47:16,275 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:47:16,287 [DEBUG] camera:: Starting thread
+2020-11-06 19:47:16,291 [DEBUG] camera:: Observation started
+2020-11-06 19:47:16,298 [INFO] camera:: Thread started
+2020-11-06 19:47:16,389 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:47:21,013 [DEBUG] __main__:: Requested /
+2020-11-06 19:47:21,864 [DEBUG] __main__:: Starting stream
+2020-11-06 19:47:41,574 [DEBUG] __main__:: Requested /
+2020-11-06 19:47:42,476 [DEBUG] __main__:: Starting stream
+2020-11-06 19:47:55,645 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:47:55,657 [DEBUG] camera:: Starting thread
+2020-11-06 19:47:55,659 [DEBUG] camera:: Observation started
+2020-11-06 19:47:55,667 [INFO] camera:: Thread started
+2020-11-06 19:47:55,855 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:47:56,716 [DEBUG] __main__:: Requested /
+2020-11-06 19:47:57,615 [DEBUG] __main__:: Starting stream
+2020-11-06 19:49:10,249 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:49:10,257 [DEBUG] camera:: Starting thread
+2020-11-06 19:49:10,258 [DEBUG] camera:: Observation started
+2020-11-06 19:49:10,264 [INFO] camera:: Thread started
+2020-11-06 19:49:10,372 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:49:10,721 [DEBUG] __main__:: Requested /
+2020-11-06 19:49:11,273 [DEBUG] __main__:: Starting stream
+2020-11-06 19:51:59,994 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:52:00,005 [DEBUG] camera:: Starting thread
+2020-11-06 19:52:00,007 [DEBUG] camera:: Observation started
+2020-11-06 19:52:00,014 [INFO] camera:: Thread started
+2020-11-06 19:52:00,187 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:52:00,828 [DEBUG] __main__:: Requested /
+2020-11-06 19:52:01,449 [DEBUG] __main__:: Starting stream
+2020-11-06 19:58:03,351 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 19:58:03,358 [DEBUG] camera:: Starting thread
+2020-11-06 19:58:03,360 [DEBUG] camera:: Observation started
+2020-11-06 19:58:03,371 [INFO] camera:: Thread started
+2020-11-06 19:58:03,583 [DEBUG] __main__:: Dass Server Started
+2020-11-06 19:58:37,688 [DEBUG] __main__:: Requested /
+2020-11-06 19:58:38,692 [DEBUG] __main__:: Starting stream
+2020-11-06 20:01:51,622 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 20:01:51,630 [DEBUG] camera:: Starting thread
+2020-11-06 20:01:51,631 [DEBUG] camera:: Observation started
+2020-11-06 20:01:51,637 [INFO] camera:: Thread started
+2020-11-06 20:01:51,869 [DEBUG] __main__:: Dass Server Started
+2020-11-06 20:01:54,013 [DEBUG] __main__:: Requested /
+2020-11-06 20:01:54,797 [DEBUG] __main__:: Starting stream
+2020-11-06 20:03:30,156 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 20:03:30,171 [DEBUG] camera:: Starting thread
+2020-11-06 20:03:30,173 [DEBUG] camera:: Observation started
+2020-11-06 20:03:30,180 [INFO] camera:: Thread started
+2020-11-06 20:03:30,392 [DEBUG] __main__:: Dass Server Started
+2020-11-06 20:03:32,114 [DEBUG] __main__:: Requested /
+2020-11-06 20:03:32,795 [DEBUG] __main__:: Starting stream
+2020-11-06 20:03:49,635 [DEBUG] __main__:: Requested capture
+2020-11-06 20:03:50,373 [DEBUG] __main__:: Requested /
+2020-11-06 20:03:50,836 [DEBUG] __main__:: Starting stream
+2020-11-06 20:06:07,465 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 20:06:07,481 [DEBUG] camera:: Starting thread
+2020-11-06 20:06:07,483 [DEBUG] camera:: Observation started
+2020-11-06 20:06:07,490 [INFO] camera:: Thread started
+2020-11-06 20:06:07,727 [DEBUG] __main__:: Dass Server Started
+2020-11-06 20:06:44,654 [DEBUG] __main__:: Requested /
+2020-11-06 20:06:45,739 [DEBUG] __main__:: Starting stream
+2020-11-06 20:13:41,110 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 20:13:41,117 [DEBUG] camera:: Starting thread
+2020-11-06 20:13:41,119 [DEBUG] camera:: Observation started
+2020-11-06 20:13:41,125 [INFO] camera:: Thread started
+2020-11-06 20:13:41,340 [DEBUG] __main__:: Dass Server Started
+2020-11-06 20:13:48,059 [DEBUG] __main__:: Requested /
+2020-11-06 20:13:50,101 [DEBUG] __main__:: Starting stream
+2020-11-06 20:15:26,459 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 20:15:26,466 [DEBUG] camera:: Starting thread
+2020-11-06 20:15:26,468 [DEBUG] camera:: Observation started
+2020-11-06 20:15:26,474 [INFO] camera:: Thread started
+2020-11-06 20:15:26,739 [DEBUG] __main__:: Dass Server Started
+2020-11-06 20:15:27,725 [DEBUG] __main__:: Requested /
+2020-11-06 20:15:28,328 [DEBUG] __main__:: Starting stream
+2020-11-06 20:16:30,983 [DEBUG] __main__:: Requested /
+2020-11-06 20:16:31,636 [DEBUG] __main__:: Starting stream
+2020-11-06 20:17:04,910 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 20:17:04,922 [DEBUG] camera:: Starting thread
+2020-11-06 20:17:04,924 [DEBUG] camera:: Observation started
+2020-11-06 20:17:04,937 [INFO] camera:: Thread started
+2020-11-06 20:17:05,214 [DEBUG] __main__:: Dass Server Started
+2020-11-06 20:17:06,258 [DEBUG] __main__:: Requested /
+2020-11-06 20:17:06,817 [DEBUG] __main__:: Starting stream
+2020-11-06 20:20:15,594 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 20:20:15,602 [DEBUG] camera:: Starting thread
+2020-11-06 20:20:15,603 [DEBUG] camera:: Observation started
+2020-11-06 20:20:15,609 [INFO] camera:: Thread started
+2020-11-06 20:20:15,862 [DEBUG] __main__:: Dass Server Started
+2020-11-06 20:20:17,257 [DEBUG] __main__:: Requested /
+2020-11-06 20:20:17,872 [DEBUG] __main__:: Starting stream
+2020-11-06 20:22:08,865 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 20:22:08,872 [DEBUG] camera:: Starting thread
+2020-11-06 20:22:08,873 [DEBUG] camera:: Observation started
+2020-11-06 20:22:08,880 [INFO] camera:: Thread started
+2020-11-06 20:22:09,076 [DEBUG] __main__:: Dass Server Started
+2020-11-06 20:22:09,657 [DEBUG] __main__:: Requested /
+2020-11-06 20:22:10,308 [DEBUG] __main__:: Starting stream
+2020-11-06 20:23:20,387 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 20:23:20,395 [DEBUG] camera:: Starting thread
+2020-11-06 20:23:20,396 [DEBUG] camera:: Observation started
+2020-11-06 20:23:20,403 [INFO] camera:: Thread started
+2020-11-06 20:23:20,664 [DEBUG] __main__:: Dass Server Started
+2020-11-06 20:23:30,640 [DEBUG] __main__:: Requested /
+2020-11-06 20:23:31,506 [DEBUG] __main__:: Starting stream
+2020-11-06 20:37:03,796 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 20:37:03,804 [DEBUG] camera:: Starting thread
+2020-11-06 20:37:03,805 [DEBUG] camera:: Observation started
+2020-11-06 20:37:03,817 [INFO] camera:: Thread started
+2020-11-06 20:37:04,015 [DEBUG] __main__:: Dass Server Started
+2020-11-06 20:37:04,573 [DEBUG] __main__:: Requested /
+2020-11-06 20:37:05,112 [DEBUG] __main__:: Starting stream
+2020-11-06 20:40:12,815 [DEBUG] __main__:: Requested /
+2020-11-06 20:40:13,561 [DEBUG] __main__:: Starting stream
+2020-11-06 20:43:28,880 [DEBUG] __main__:: Requested /
+2020-11-06 20:43:29,164 [DEBUG] __main__:: Starting stream
+2020-11-06 20:43:47,577 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 20:43:47,585 [DEBUG] camera:: Starting thread
+2020-11-06 20:43:47,586 [DEBUG] camera:: Observation started
+2020-11-06 20:43:47,597 [INFO] camera:: Thread started
+2020-11-06 20:43:47,859 [DEBUG] __main__:: Dass Server Started
+2020-11-06 20:43:54,707 [DEBUG] __main__:: Requested /
+2020-11-06 20:43:55,893 [DEBUG] __main__:: Starting stream
+2020-11-06 20:50:42,489 [DEBUG] __main__:: Requested /
+2020-11-06 20:50:44,949 [DEBUG] __main__:: Starting stream
+2020-11-06 20:51:18,800 [DEBUG] __main__:: Requested /
+2020-11-06 20:51:26,743 [DEBUG] __main__:: Starting stream

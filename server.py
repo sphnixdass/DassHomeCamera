@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 
 from flask import Flask, render_template, send_from_directory, Response
-# from flask_socketio import SocketIO
+from flask_socketio import SocketIO
 from pathlib import Path
 from capture import capture_and_save
 from camera import Camera
 import argparse, logging, logging.config, conf
+from time import sleep
 
 logging.config.dictConfig(conf.dictConfig)
 logger = logging.getLogger(__name__)
@@ -14,8 +15,27 @@ camera = Camera()
 camera.run()
 
 app = Flask(__name__)
-# app.config["SECRET_KEY"] = "secret!"
-# socketio = SocketIO(app)
+app.config["SECRET_KEY"] = "secret!"
+socketio = SocketIO(app, ping_timeout=10, ping_interval=5)
+
+
+@socketio.on('my event')
+def handle_my_custom_event(data):
+    print('received json: ' + str(data))
+    tempvar = 0
+    
+    while True:
+        if tempvar != camera.currentImage:
+            sleep(1)
+            socketio.emit('ImageUpdate', str(camera.currentImage))
+            tempvar = camera.currentImage
+
+@socketio.on('captureimage')
+def handle_captureimage(data):
+    print('captureimage'  + str(data))
+    camera.CaptureImage = True
+
+            
 
 @app.after_request
 def add_header(r):
@@ -71,10 +91,12 @@ def video_feed():
         mimetype="multipart/x-mixed-replace; boundary=frame")
 
 if __name__=="__main__":
-    # socketio.run(app,host="0.0.0.0",port="3005",threaded=True)
+    
     parser = argparse.ArgumentParser()
     parser.add_argument('-p','--port',type=int,default=5010, help="Running port")
     parser.add_argument("-H","--host",type=str,default='0.0.0.0', help="Address to broadcast")
     args = parser.parse_args()
     logger.debug("Dass Server Started")
-    app.run(host=args.host,port=args.port)
+    #app.run(host=args.host,port=args.port)
+    socketio.run(app,host=args.host,port=args.port)
+    
