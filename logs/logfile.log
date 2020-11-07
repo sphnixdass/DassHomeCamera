@@ -1055,3 +1055,33 @@
 2020-11-06 20:50:44,949 [DEBUG] __main__:: Starting stream
 2020-11-06 20:51:18,800 [DEBUG] __main__:: Requested /
 2020-11-06 20:51:26,743 [DEBUG] __main__:: Starting stream
+2020-11-06 21:12:40,966 [DEBUG] __main__:: Requested /
+2020-11-06 21:12:43,715 [DEBUG] __main__:: Starting stream
+2020-11-06 21:19:11,410 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 21:19:11,434 [DEBUG] camera:: Starting thread
+2020-11-06 21:19:11,437 [DEBUG] camera:: Observation started
+2020-11-06 21:19:11,444 [INFO] camera:: Thread started
+2020-11-06 21:19:11,741 [DEBUG] __main__:: Dass Server Started
+2020-11-06 21:19:21,787 [DEBUG] __main__:: Requested /
+2020-11-06 21:19:22,108 [DEBUG] __main__:: Starting stream
+2020-11-06 21:40:21,736 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 21:40:21,744 [DEBUG] camera:: Starting thread
+2020-11-06 21:40:21,745 [DEBUG] camera:: Observation started
+2020-11-06 21:40:21,751 [INFO] camera:: Thread started
+2020-11-06 21:40:21,927 [DEBUG] __main__:: Dass Server Started
+2020-11-06 21:40:28,402 [DEBUG] __main__:: Requested /
+2020-11-06 21:40:29,254 [DEBUG] __main__:: Starting stream
+2020-11-06 21:41:47,033 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 21:41:47,044 [DEBUG] camera:: Starting thread
+2020-11-06 21:41:47,046 [DEBUG] camera:: Observation started
+2020-11-06 21:41:47,069 [INFO] camera:: Thread started
+2020-11-06 21:41:47,226 [DEBUG] __main__:: Dass Server Started
+2020-11-06 21:41:52,465 [DEBUG] __main__:: Requested /
+2020-11-06 21:41:54,058 [DEBUG] __main__:: Starting stream
+2020-11-06 21:45:22,560 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2020-11-06 21:45:22,567 [DEBUG] camera:: Starting thread
+2020-11-06 21:45:22,568 [DEBUG] camera:: Observation started
+2020-11-06 21:45:22,576 [INFO] camera:: Thread started
+2020-11-06 21:45:22,825 [DEBUG] __main__:: Dass Server Started
+2020-11-06 21:45:26,593 [DEBUG] __main__:: Requested /
+2020-11-06 21:45:27,312 [DEBUG] __main__:: Starting stream

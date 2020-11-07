@@ -16,7 +16,7 @@ camera.run()
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "secret!"
-socketio = SocketIO(app, ping_timeout=10, ping_interval=5)
+socketio = SocketIO(app, ping_timeout=10, ping_interval=2)
 
 
 @socketio.on('my event')

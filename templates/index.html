@@ -17,9 +17,17 @@
 
 <script>
     
+    var socket;
+    
  $( document ).ready(function() {
     
-    var socket = io();
+    socket = io({
+  reconnection: true,             // whether to reconnect automatically
+  reconnectionAttempts: Infinity, // number of reconnection attempts before giving up
+  reconnectionDelay: 2000,        // how long to initially wait before attempting a new reconnection
+  reconnectionDelayMax: 5000,     // maximum amount of time to wait between reconnection attempts. Each attempt increases the reconnection delay by 2x along with a randomization factor
+  randomizationFactor: 0.5
+});
     socket.on('connect', function() {
         socket.emit('my event', {data: 'I\'m connected!'});
     });
@@ -87,7 +95,7 @@ function PrevFunction() {
   
 }
 function CaptureFunction(){
-    var socket = io();
+    //var socket = io();
         socket.emit('captureimage', {data: 'CaptureImage'});
  
 }
