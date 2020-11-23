@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from flask import Flask, render_template, send_from_directory, Response
+from flask import Flask, render_template, send_from_directory, Response, request
 from flask_socketio import SocketIO
 from pathlib import Path
 from capture import capture_and_save
@@ -16,24 +16,24 @@ camera.run()
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "secret!"
-socketio = SocketIO(app, ping_timeout=10, ping_interval=2)
+#socketio = SocketIO(app, ping_timeout=10, ping_interval=2)
 
 
-@socketio.on('my event')
-def handle_my_custom_event(data):
-    print('received json: ' + str(data))
-    tempvar = 0
-    
-    while True:
-        if tempvar != camera.currentImage:
-            sleep(1)
-            socketio.emit('ImageUpdate', str(camera.currentImage))
-            tempvar = camera.currentImage
+#@socketio.on('my event')
+#def handle_my_custom_event(data):
+#    print('received json: ' + str(data))
+#    tempvar = 0
+#    
+#    while True:
+#        if tempvar != camera.currentImage:
+#            sleep(1)
+#            socketio.emit('ImageUpdate', str(camera.currentImage))
+#            tempvar = camera.currentImage
 
-@socketio.on('captureimage')
-def handle_captureimage(data):
-    print('captureimage'  + str(data))
-    camera.CaptureImage = True
+#@socketio.on('captureimage')
+#def handle_captureimage(data):
+#    print('captureimage'  + str(data))
+#    camera.CaptureImage = True
 
             
 
@@ -48,6 +48,18 @@ def add_header(r):
     r.headers["Expires"] = "0"
     r.headers["Cache-Control"] = "public, max-age=0"
     return r
+
+@app.route('/CaptureImage', methods=['GET'])
+def CaptureImage():
+    logger.debug("Requested capture")
+    im = camera.get_frame(_bytes=False)
+    capture_and_save(im)
+    return ""
+
+@app.route('/GetImageID', methods=['GET'])
+def GetImageID():
+        return str(camera.currentImage)
+    
 
 @app.route("/")
 def entrypoint():
@@ -83,7 +95,7 @@ def gen(camera):
 @app.route("/stream")
 def stream_page():
     logger.debug("Requested stream page")
-    return render_template("stream.html")
+    return render_template("index.html")
 
 @app.route("/video_feed")
 def video_feed():
@@ -97,6 +109,6 @@ if __name__=="__main__":
     parser.add_argument("-H","--host",type=str,default='0.0.0.0', help="Address to broadcast")
     args = parser.parse_args()
     logger.debug("Dass Server Started")
-    #app.run(host=args.host,port=args.port)
-    socketio.run(app,host=args.host,port=args.port)
+    app.run(host=args.host,port=args.port)
+    #socketio.run(app,host=args.host,port=args.port)
     

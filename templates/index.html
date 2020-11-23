@@ -18,31 +18,38 @@
 <script>
     
     var socket;
+    var tid;
     
  $( document ).ready(function() {
-    
-    socket = io({
-  reconnection: true,             // whether to reconnect automatically
-  reconnectionAttempts: Infinity, // number of reconnection attempts before giving up
-  reconnectionDelay: 2000,        // how long to initially wait before attempting a new reconnection
-  reconnectionDelayMax: 5000,     // maximum amount of time to wait between reconnection attempts. Each attempt increases the reconnection delay by 2x along with a randomization factor
-  randomizationFactor: 0.5
-});
-    socket.on('connect', function() {
-        socket.emit('my event', {data: 'I\'m connected!'});
-    });
-     
-    socket.on('ImageUpdate', function(msg) {
-        console.log(msg);
-         var temph1 = parseInt(msg);
-        document.getElementById("img2").src = "/static/" + temph1.toString() + ".jpg";
-        document.getElementById("h1").innerHTML = msg
-        
-    });
-    
-    
+
+//document.getElementById("autorefresh").checked = true;
+
+   tid = setInterval(getImageId, 2000);
+ 
+ 
     
 });
+
+
+function autorefFunction(){
+    
+   
+    var checkBox = document.getElementById("autorefresh");
+   
+  if (checkBox.innerHTML == "Auto Refresh On"){
+     checkBox.innerHTML = "Auto Refresh Off";
+    clearTimeout(tid);
+ 
+    
+  } else {
+    checkBox.checked = true;
+        checkBox.innerHTML = "Auto Refresh On";
+        clearTimeout(tid);
+        tid = setInterval(getImageId, 2000);
+    
+  }
+
+}
 
 function btnStreamFunction(){
     document.getElementById("img").src = "{{ url_for('video_feed') }}";
@@ -82,6 +89,10 @@ function NextFunction() {
 function PrevFunction() {
     
     
+      document.getElementById("autorefresh").innerHTML = "Auto Refresh Off";
+      clearTimeout(tid);
+      
+    
     var temph1 = parseInt(document.getElementById("h1").innerHTML);
     temph1 = temph1 - 1;
     if (temph1 < 1)
@@ -94,29 +105,28 @@ function PrevFunction() {
 
   
 }
+
+
 function CaptureFunction(){
-    //var socket = io();
-        socket.emit('captureimage', {data: 'CaptureImage'});
- 
+    $.get("CaptureImage", function(data, status){});
 }
 
-function getText(){
-    // read text from URL location
-    var request = new XMLHttpRequest();
-    var temptxt = "";
-    request.open('GET', '/static/alert.txt', true);
-    request.send(null);
-    request.onreadystatechange = function () {
-        if (request.readyState === 4 && request.status === 200) {
-            var type = request.getResponseHeader('Content-Type');
-            if (type.indexOf("text") !== 1) {
-                temptxt = request.responseText;
-                document.getElementById("h1").innerHTML = temptxt;
-                return temptxt;
-            }
-        }
+function getImageId(){
+    $.get("GetImageID", function(data, status){
+        
+        var temph1 = parseInt(data);
+        if (parseInt(document.getElementById("h1").innerHTML) != temph1)
+        {
+        document.getElementById("img2").src = "/static/" + temph1.toString() + ".jpg";
+        document.getElementById("h1").innerHTML = data
     }
-}
+      //alert("Data: " + data + "\nStatus: " + status);
+    });
+    
+    
+    }
+
+
 
 </script>
 
@@ -138,11 +148,15 @@ function getText(){
         <!--<button class="btn btn-primary" id="btnStream" onclick="btnStreamFunction()">Stream</button>-->
         <!--<button class="btn btn-primary" id="btnPhoto" onclick="btnPhotoFunction()">View Photo</button>-->
         <div class="col col-lg-2">
-        <button class="btn btn-primary" onclick="PrevFunction()">Prev</button>
+            <button class="btn btn-primary" onclick="PrevFunction()">Prev</button>
         </div>
         <div class="col col-lg-2">
-        <button class="btn btn-primary" onclick="NextFunction()">Next</button>
+            <button class="btn btn-primary" onclick="NextFunction()">Next</button>
         </div>
+        <div class="col col-lg-2">
+            <button id="autorefresh" class="btn btn-primary" onclick="autorefFunction()">Auto Refresh On</button>
+        </div>
+
         </div>
         <br>
         <div class="row justify-content-md-center col-md-auto">
